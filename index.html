@@ -1,0 +1,49 @@
+<h1>கணிப்பபொறி</h1>
+<p>உருவாக்கியவர்கள்: <strong>பர்னபா</strong> மற்றும் <strong>செங்கதிர்</strong></p>
+<br>
+<p>முதலாவது எண்ணை பதிவிடுங்கள்</p>
+<input>
+<br>
+<br>
+<p>இரண்டாவது எண்ணை பதிவிடுங்கள்</p>
+<input>
+<br>
+<br>
+<button>கூட்டுக</button>
+<button>கழிக்க</button>
+<button>பெருக்க</button>
+<button>வகுக்க</button>
+
+<script>
+var inputs = document.querySelectorAll("input")
+
+var buttons = document.querySelectorAll("button")
+var button1 = buttons[0]
+var button2 = buttons[1]
+var button3 = buttons[2]
+var button4 = buttons[3]
+
+button1.onclick = function() {
+	var num1 = parseInt(inputs[0].value)
+	var num2 = parseInt(inputs[1].value)
+	alert(num1 + num2)
+}
+
+button2.onclick = function() {
+	var num1 = parseInt(inputs[0].value)
+	var num2 = parseInt(inputs[1].value)
+	alert(num1 - num2)
+}
+
+button3.onclick = function() {
+	var num1 = parseInt(inputs[0].value)
+	var num2 = parseInt(inputs[1].value)
+	alert(num1 * num2)
+}
+
+button4.onclick = function() {
+	var num1 = parseInt(inputs[0].value)
+	var num2 = parseInt(inputs[1].value)
+	alert(num1 / num2)
+}
+</script>
