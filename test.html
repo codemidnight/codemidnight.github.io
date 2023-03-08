@@ -7,11 +7,14 @@
 </head>
 
 <body>
-      <input id="btn" type="button" onclick="showDialog()" value="Show Dialog" />
+      <input id="alert-btn" type="button" value="Alert Dialog" />
+      <input id="confirm-btn" type="button" value="Confirm Dialog" />
+      <input id="prompt-btn" type="button" value="Prompt Dialog" />
 
   <script>
-    var btn = document.querySelector("#btn");
-    btn.addEventListener("click", () => alert("hello, world"), false);
+    document.querySelector("#alert-btn").addEventListener("click", () => alert("hello, world"), false);
+    document.querySelector("#confirm-btn").addEventListener("click", () => confirm("hello, world"), false);
+    document.querySelector("#prompt-btn").addEventListener("click", () => prompt("hello, world"), false);
   </script>
 </body>
 </html>
